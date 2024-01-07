@@ -5,8 +5,8 @@
     }
   },
   "routes": [
-    { "src": "/v/(.*)", "dest": "/api/index.php?id=" },
-    { "src": "/v/", "dest": "/api/index.php?id=" },
+    { "src": "/v/(.*)", "dest": "/api/index.php?id=$1" },
+    { "src": "/v/", "dest": "/api/index.php?id=$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
